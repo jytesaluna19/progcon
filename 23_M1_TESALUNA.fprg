@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 10:27:02 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLURLVTNDMzA7MjAxOS0xMC0yOTsxMDowODo1NiBBTTsyNzA0"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLURLVTNDMzA7MjAxOS0xMC0yOTsxMDoyNzowMiBBTTsxOzI4MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;WELCOME TO J.ONE'S PROGRAM THAT WILL ADD 2 NUMBERS&quot;" newline="True"/>
+            <declare name="J" type="Integer" array="False" size=""/>
+            <declare name="K" type="Integer" array="False" size=""/>
+            <output expression="&quot;KINDLY INPUT THE FIRST DIGIT YOU LIKE TO ADD&quot;" newline="True"/>
+            <input variable="J"/>
+            <output expression="&quot;KINDLY INPUT THE SECOND DIGIT YOU LIKE TO ADD&quot;" newline="True"/>
+            <input variable="K"/>
+            <output expression="&quot;THE TOTAL OF THE VALUES YOU INPUT IS&quot;" newline="False"/>
+            <declare name="SUM" type="Integer" array="False" size=""/>
+            <assign variable="SUM" expression="J + K"/>
+            <output expression="SUM" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
