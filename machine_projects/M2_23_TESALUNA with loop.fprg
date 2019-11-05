@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-05 11:13:02 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLURLVTNDMzA7MjAxOS0xMC0yOTsxMDo0NjozOCBBTTsyNzA2"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLURLVTNDMzA7MjAxOS0xMS0wNTsxMToxMzowMiBBTTszOzI3OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RADIUS" type="Integer" array="False" size=""/>
+            <declare name="DIAMETER" type="Integer" array="False" size=""/>
+            <declare name="AREA" type="Integer" array="False" size=""/>
+            <declare name="ANSWER" type="String" array="False" size=""/>
+            <output expression="&quot;Welcome to the area finder where your unknown area will now be known&quot;" newline="True"/>
+            <output expression="&quot;do you have the RADIUS or the DIAMETER?&quot;" newline="True"/>
+            <input variable="Answer"/>
+            <if expression="Answer==&quot;radius&quot;">
+                <then>
+                    <output expression="&quot;input radius&quot;" newline="True"/>
+                    <input variable="radius"/>
+                    <assign variable="Area" expression="3.14 * Radius ^ 2"/>
+                    <output expression="&quot;The area of the circle is&quot;&amp; AREA" newline="True"/>
+                </then>
+                <else>
+                    <if expression="answer==&quot;diameter&quot;">
+                        <then>
+                            <output expression="&quot;input diameter&quot;" newline="True"/>
+                            <input variable="diameter"/>
+                            <assign variable="Area" expression="(3.14/4) * Diameter ^ 2"/>
+                            <output expression="&quot;The area of the circle is&quot;&amp; AREA" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;would you like to do it again? YES or NO?&quot;" newline="True"/>
+            <declare name="YES" type="Integer" array="False" size=""/>
+            <declare name="NO" type="Integer" array="False" size=""/>
+            <declare name="answer1" type="String" array="False" size=""/>
+            <input variable="answer1"/>
+            <if expression="answer1==&quot;YES&quot;">
+                <then>
+                    <call expression="Main&#13;&#10;"/>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <if expression="answer1==&quot;NO&quot;">
+                        <then/>
+                        <else/>
+                    </if>
+                    <output expression="&quot; Thank you and you're the best ;)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
