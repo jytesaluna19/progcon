@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-05 10:02:13 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLURLVTNDMzA7MjAxOS0xMS0wNTswOTo1MTo0MSBBTTsyNjk5"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLURLVTNDMzA7MjAxOS0xMS0wNTsxMDowMjoxMyBBTTsxOzI3OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Real" array="False" size=""/>
+            <output expression="&quot;Welcome to the odd or even Identifier&quot;" newline="True"/>
+            <output expression="&quot;please enter a number&quot;" newline="True"/>
+            <input variable="num1"/>
+            <if expression="Num1%2 == 0">
+                <then>
+                    <output expression="&quot;even&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;odd&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
