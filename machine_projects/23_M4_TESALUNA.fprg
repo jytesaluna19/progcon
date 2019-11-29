@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-29 10:25:00 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMTg7MjAxOS0xMS0yOTswODo1OTo1NCBBTTsyMjE5"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTg7MjAxOS0xMS0yOTsxMDoyNTowMCBBTTsxOzIzMDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;HELLO! welcome to the grade equivalent identifier&quot;" newline="False"/>
+            <output expression="&quot; Please input your grade :) &quot;" newline="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="Num1" type="Real" array="False" size=""/>
+            <input variable="Num1"/>
+            <if expression="Num1&gt;=95">
+                <then>
+                    <output expression="&quot;PERFECT! you have an equivalent grade of 4.0&quot;" newline="True"/>
+                    <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                    <input variable="Again"/>
+                    <if expression="Again==&quot;yes&quot;">
+                        <then>
+                            <output expression="&quot;OKAYYKEYYOO!&quot;" newline="True"/>
+                            <call expression="main&#13;&#10;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;alright, thank you :) &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Num1&gt;=91">
+                        <then>
+                            <output expression="&quot;NICE! you have an equivalent grade of 3.5&quot;" newline="True"/>
+                            <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                            <input variable="Again"/>
+                            <if expression="Again==&quot;yes&quot;">
+                                <then>
+                                    <output expression="&quot;OKAYYKEYYOO!&quot;" newline="True"/>
+                                    <call expression="main&#13;&#10;"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;alright, thank you :) &quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="Num1&gt;=87">
+                                <then>
+                                    <output expression="&quot;Well done! you have an equivalent grade of 3.0&quot;" newline="True"/>
+                                    <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                                    <input variable="Again"/>
+                                    <if expression="Again==&quot;yes&quot;">
+                                        <then>
+                                            <output expression="&quot;OKAYYKEYYOO!&quot;" newline="True"/>
+                                            <call expression="main&#13;&#10;"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;alright, thank you :) &quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="Num1&gt;=83">
+                                        <then>
+                                            <output expression="&quot;Awesome! you have an equivalent grade of 2.5&quot;" newline="True"/>
+                                            <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                                            <input variable="Again"/>
+                                            <if expression="Again==&quot;yes&quot;">
+                                                <then>
+                                                    <output expression="&quot;OKAYYKEYYOO!&quot;" newline="True"/>
+                                                    <call expression="main&#13;&#10;"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;alright, thank you :) &quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="Num1&gt;=79">
+                                                <then>
+                                                    <output expression="&quot;Great! you have an equivalent grade of 2.0&quot;" newline="True"/>
+                                                    <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                                                    <input variable="Again"/>
+                                                    <if expression="Again==&quot;yes&quot;">
+                                                        <then>
+                                                            <output expression="&quot;OKAYYKEYYOO!&quot;" newline="True"/>
+                                                            <call expression="main&#13;&#10;"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;alright, thank you :) &quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <if expression="Num1&gt;=75">
+                                                        <then>
+                                                            <output expression="&quot;Your equivalent grade is 1.5&quot;" newline="True"/>
+                                                            <output expression="&quot;Continue to excel ;) &quot;" newline="True"/>
+                                                            <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                                                            <input variable="Again"/>
+                                                            <if expression="Again==&quot;yes&quot;">
+                                                                <then>
+                                                                    <output expression="&quot;OKAYYKEYYOO!&quot;" newline="True"/>
+                                                                    <call expression="main&#13;&#10;"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;alright, thank you :) &quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="Num1&gt;=70">
+                                                                <then>
+                                                                    <output expression="&quot;Your equivalent grade is 1.0&quot;" newline="True"/>
+                                                                    <output expression="&quot;Just keep studying and surely you will do better ;) &quot;" newline="True"/>
+                                                                    <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                                                                    <input variable="Again"/>
+                                                                    <if expression="Again==&quot;yes&quot;">
+                                                                        <then>
+                                                                            <output expression="&quot;OKAYYKEYYOO!&quot;" newline="True"/>
+                                                                            <call expression="main&#13;&#10;"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;alright, thank you :) &quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="Num1&gt;=1">
+                                                                        <then>
+                                                                            <output expression="&quot; Awwe :( unfortunately your equivalent grade is R&quot;" newline="True"/>
+                                                                            <output expression="&quot;JUST BELIEVE IN YOURSELF AND TRY AND TRY UNTIL YOU SUCCEED&quot;" newline="True"/>
+                                                                            <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                                                                            <input variable="Again"/>
+                                                                            <if expression="Again==&quot;yes&quot;">
+                                                                                <then>
+                                                                                    <output expression="&quot;OKAYYKEYYOO!&quot;" newline="True"/>
+                                                                                    <call expression="main&#13;&#10;"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;alright, thank you :) &quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;sorry but you entered an invalid digit&quot;" newline="True"/>
+                                                                            <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                                                                            <input variable="Again"/>
+                                                                            <if expression="Again==&quot;yes&quot;">
+                                                                                <then>
+                                                                                    <output expression="&quot;OKAYYKEYYOO!&quot;" newline="True"/>
+                                                                                    <call expression="main&#13;&#10;"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;alright, thank you :) &quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
