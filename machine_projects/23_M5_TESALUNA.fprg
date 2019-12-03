@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-03 11:00:18 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMjA7MjAxOS0xMi0wMzsxMDoxMzoxMSBBTTsyMTgx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMjA7MjAxOS0xMi0wMzsxMTowMDoxOCBBTTsxOzIyOTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1" type="String" array="False" size=""/>
+            <declare name="Num2" type="String" array="False" size=""/>
+            <declare name="Num3" type="String" array="False" size=""/>
+            <declare name="Again" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Want to find out the least value? INPUT value below :)&quot;" newline="True"/>
+            <output expression="&quot;Input first value please&quot;" newline="True"/>
+            <input variable="Num1"/>
+            <output expression="&quot;Thanks, Now input second value&quot;" newline="True"/>
+            <input variable="Num2"/>
+            <output expression="&quot;alright, now input the last value&quot;" newline="True"/>
+            <input variable="Num3"/>
+            <if expression="Num1&gt;Num2">
+                <then>
+                    <if expression="Num2&gt;Num3">
+                        <then>
+                            <output expression="&quot;the least value is the third value you input&quot;" newline="True"/>
+                            <output expression="&quot;would you like to try again?&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;the least value is the second value you input&quot;" newline="True"/>
+                            <output expression="&quot;would you like to try again?&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Num1&gt;Num3">
+                        <then>
+                            <output expression="&quot;the least value is the third value you input&quot;" newline="True"/>
+                            <output expression="&quot;would you like to try again?&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;the least value is the first value you input&quot;" newline="True"/>
+                            <output expression="&quot;would you like to try again?&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <input variable="Again"/>
+            <if expression="again==yes">
+                <then>
+                    <output expression="&quot;alright, let's do it again&quot;" newline="True"/>
+                    <call expression="main"/>
+                </then>
+                <else>
+                    <output expression="&quot;okay, thank you&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
