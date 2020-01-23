@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-07 10:48:14 AM"/>
+        <attribute name="created" value="dXNlcjtBQ0VSOzIwMTktMTEtMTA7MDY6NTA6MjQgUE07MjAwNg=="/>
+        <attribute name="edited" value="dXNlcjtBQ0VSOzIwMjAtMDEtMDY7MTA6NTY6MjcgUE07NDsyMTE3"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTA7MjAyMC0wMS0wNzsxMDo0ODoxNCBBTTszOzIyOTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Fahrenheit" type="Real" array="False" size=""/>
+            <declare name="Celsius" type="Real" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="true"/>
+            <output expression="&quot;Welcome sa Calculator ni MaTeMe na nagsasagot gung gaan ka ka hot&quot;" newline="True"/>
+            <while expression="ExitCode == true">
+                <output expression="&quot;Ano ang gagamitin Fahrenheit o Celsius&quot;" newline="False"/>
+                <input variable="Answer"/>
+                <if expression="Answer == &quot;Fahrenheit&quot;">
+                    <then>
+                        <output expression="&quot;Ilagay ang Fahrenheit&quot;" newline="True"/>
+                        <input variable="Fahrenheit"/>
+                        <assign variable="Fahrenheit" expression="(Fahrenheit-32)*5/9"/>
+                        <output expression="&quot;Ang temperatura ay may sukat na (sa Celsius) ay: &quot; &amp; Fahrenheit" newline="True"/>
+                        <output expression="&quot;Gusto mo bang subukan uli?&quot;" newline="True"/>
+                        <input variable="Again"/>
+                        <if expression="Again == &quot;oo&quot;">
+                            <then/>
+                            <else>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="Answer == &quot;Celsius&quot;">
+                            <then>
+                                <output expression="&quot;Ilagay ang Celsius&quot;" newline="True"/>
+                                <input variable="Celsius"/>
+                                <assign variable="Celsius" expression="(Celsius*9/5)+32"/>
+                                <output expression="&quot;Ang temperatura ay may sukat na (sa Fahrenheit) ay: &quot; &amp; Celsius" newline="True"/>
+                                <output expression="&quot;Gusto mo bang subukan uli?&quot;" newline="True"/>
+                                <input variable="Again"/>
+                                <if expression="Again == &quot;oo&quot;">
+                                    <then/>
+                                    <else>
+                                        <breakpoint/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;Sabi ko Fahrenheit at Celsius lang&quot;" newline="True"/>
+                                <output expression="&quot;Bat pa maghahanap ng iba&quot;" newline="True"/>
+                                <output expression="&quot;Gusto mo bang subukan ulit?&quot;" newline="True"/>
+                                <input variable="Again"/>
+                                <if expression="Again == &quot;oo&quot;">
+                                    <then/>
+                                    <else>
+                                        <breakpoint/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

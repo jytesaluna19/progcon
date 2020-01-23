@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 11:02:22 AM"/>
+        <attribute name="created" value="dXNlcjtBQ0VSOzIwMTktMTEtMTA7MDY6NTA6MjQgUE07MjAwNg=="/>
+        <attribute name="edited" value="dXNlcjtBQ0VSOzIwMjAtMDEtMDY7MTE6MTE6MDQgUE07NTsyMTA1"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTA7MjAyMC0wMS0xNzsxMTowMjoyMiBBTTs0OzIyODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="USD" type="Real" array="False" size=""/>
+            <declare name="PHP" type="Real" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="true"/>
+            <output expression="&quot;Welcome to Money Changer that only supports USD to PHP Vice Versa transactions&quot;" newline="True"/>
+            <while expression="ExitCode == true">
+                <output expression="&quot;What currency do you have at present?&quot;" newline="False"/>
+                <output expression="&quot; all caps please, thank you&quot;" newline="True"/>
+                <input variable="Answer"/>
+                <if expression="Answer == &quot;USD&quot;">
+                    <then>
+                        <output expression="&quot;Enter the amount of cash to be converted&quot;" newline="True"/>
+                        <input variable="USD"/>
+                        <assign variable="USD" expression="USD*50.90"/>
+                        <output expression="&quot;Conversion results as of today from USD to PHP is &quot; &amp; USD" newline="True"/>
+                        <output expression="&quot;Do you want to convert again?&quot;" newline="True"/>
+                        <input variable="Again"/>
+                        <if expression="Again == &quot;yes&quot;">
+                            <then/>
+                            <else>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="Answer == &quot;PHP&quot;">
+                            <then>
+                                <output expression="&quot;Enter the amount of cash to be converted&quot;" newline="True"/>
+                                <input variable="PHP"/>
+                                <assign variable="PHP" expression="PHP*0.020"/>
+                                <output expression="&quot;Conversion results as of today from PHP to USD is &quot; &amp; PHP" newline="True"/>
+                                <output expression="&quot;Do you want to convert again?&quot;" newline="True"/>
+                                <input variable="Again"/>
+                                <if expression="Again == &quot;yes&quot;">
+                                    <then/>
+                                    <else>
+                                        <breakpoint/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;Only PHP to USD Vice Versa is only available at this moment&quot;" newline="True"/>
+                                <output expression="&quot;Do you want to try again?&quot;" newline="True"/>
+                                <input variable="Again"/>
+                                <if expression="Again == &quot;yes&quot;">
+                                    <then/>
+                                    <else>
+                                        <breakpoint/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:03:49 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMTk7MjAyMC0wMS0wNzsxMDoyNTozNCBBTTsyMTkx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTk7MjAyMC0wMS0wNzsxMToyMzoxOSBBTTsxOzIzMDE="/>
+        <attribute name="edited" value="TmllbDtERVNLVE9QLTZNUUc5MEk7MjAyMC0wMS0wOTsxMToyMTo1MSBQTTszOzI4MTU="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTA7MjAyMC0wMS0xNzsxMDowMzo0OSBBTTsyOzIyOTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, average, finalAverage, hold, a" type="Integer" array="False" size=""/>
+            <declare name="arr" type="Integer" array="True" size="10"/>
+            <assign variable="average" expression="0"/>
+            <assign variable="hold" expression="0"/>
+            <assign variable="finalAverage" expression="0"/>
+            <output expression="&quot;Welcome to MaTeMe's Program that computes the Average and Max and Min of the Values&quot;" newline="True"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;input the number you have chosen&quot;" newline="True"/>
+                <input variable="arr[i]"/>
+            </for>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <assign variable="average" expression="average + arr[i]"/>
+            </for>
+            <output expression="&quot;The Average is &quot; &amp; average / 10" newline="True"/>
+            <for variable="a" start="0" end="9" direction="inc" step="1">
+                <for variable="i" start="0" end="8" direction="inc" step="1">
+                    <if expression="arr[i] &lt; arr[i+1]">
+                        <then>
+                            <assign variable="hold" expression="arr[i]"/>
+                            <assign variable="arr[i]" expression="arr[i+1]"/>
+                            <assign variable="arr[i+1]" expression="hold"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;the largest is &quot; &amp; arr[0]" newline="True"/>
+            <output expression="&quot;the smallest is &quot; &amp; arr[9]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

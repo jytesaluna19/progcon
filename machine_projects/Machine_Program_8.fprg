@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Niel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:05:54 AM"/>
+        <attribute name="created" value="TmllbDtERVNLVE9QLTZNUUc5MEk7MjAyMC0wMS0wNjswOTo0Mjo0NyBQTTsyNzE3"/>
+        <attribute name="edited" value="TmllbDtERVNLVE9QLTZNUUc5MEk7MjAyMC0wMS0wNjsxMTo1ODoyMCBQTTsyOzI4MTc="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTA7MjAyMC0wMS0xNzsxMDowNTo1NCBBTTsyOzIyOTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Hours" type="Integer" array="False" size=""/>
+            <declare name="Min" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Final" type="String" array="False" size=""/>
+            <output expression="&quot;Welcome to MaTeMe's Time Converter Program which converts a 12hrs time to a 24hrs format&quot;" newline="True"/>
+            <output expression="&quot;Please Input the Hour&quot;" newline="True"/>
+            <input variable="Hours"/>
+            <output expression="&quot;Now Please Input the Minutes&quot;" newline="True"/>
+            <input variable="Min"/>
+            <output expression="&quot;Lastly Is it AM or PM?&quot;" newline="True"/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;PM&quot;">
+                <then>
+                    <assign variable="Hours" expression="Hours * 100 + 1200 + Min"/>
+                </then>
+                <else>
+                    <assign variable="Hours" expression="Hours * 100 + Min"/>
+                </else>
+            </if>
+            <output expression="&quot;The Military Time is &quot; &amp; Hours" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

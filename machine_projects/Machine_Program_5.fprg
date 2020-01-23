@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:56:59 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLUcyMUI1Szc7MjAxOS0xMC0yOTswOTo0NTozNSBBTTsyNjg0"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLUcyMUI1Szc7MjAxOS0xMC0yOTsxMDoyNjowMiBBTTsxOzI3Nzc="/>
+        <attribute name="edited" value="dXNlcjtBQ0VSOzIwMTktMTEtMTA7MDc6Mzg6MzggUE07MTsyMTI2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTA7MjAyMC0wMS0xNzsxMDo1Njo1OSBBTTs1OzIzMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome Sa Calculator Ni Jep (BUSINESS MATH EDITION)&quot;" newline="True"/>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Real" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="true"/>
+            <while expression="ExitCode == true">
+                <output expression="&quot;Maaring ilagay ang mga presyo ng bilihin&quot;" newline="True"/>
+                <input variable="num1"/>
+                <output expression="&quot;Maaring ilagay ang porsyento ng sale (in decimal form)&quot;" newline="True"/>
+                <input variable="num2"/>
+                <assign variable="price" expression="num1-num1*num2"/>
+                <output expression="&quot;Ang magiging presyo ng inyong bilihin pag may sale ay &quot; &amp; price" newline="True"/>
+                <output expression="&quot;Gusto mo bang subukan uli?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;oo&quot;">
+                    <then/>
+                    <else>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

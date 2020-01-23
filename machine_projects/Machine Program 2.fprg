@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="EDWIN LONTOC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 10:25:49 AM"/>
+        <attribute name="created" value="RURXSU4gTE9OVE9DO0VEV0lOTE9OVE9DLVBDOzIwMTktMTItMjI7MDE6NTA6MjkgUE07MzE4MA=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xODswMTo1NTo1NCBBTTs0MTsyMzU1"/>
+        <attribute name="edited" value="RURXSU4gTE9OVE9DO0VEV0lOTE9OVE9DLVBDOzIwMjAtMDEtMTg7MTA6MTI6MzYgUE07MTtSYW1zO0RFU0tUT1AtVDUzRkIxNDsyMDIwLTAxLTA3OzEwOjM2OjU0IEFNOzIuIEJpcnRoZGF5LmZwcmc7NzQ5Ng=="/>
+        <attribute name="edited" value="RURXSU4gTE9OVE9DO0VEV0lOTE9OVE9DLVBDOzIwMjAtMDEtMTg7MTA6NTY6MDIgUE07MTc7MzMzNQ=="/>
+        <attribute name="edited" value="dXNlcjtBQ0VSOzIwMjAtMDEtMjM7MTA6MjU6NDkgQU07MjsyMDk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to MaTeMe's program that computes your age base on your birthday&quot;" newline="True"/>
+            <declare name="BirthMonth, BirthDate, BirthYear" type="Integer" array="False" size=""/>
+            <declare name="CurrentMonth, CurrentDate, CurrentYear" type="Integer" array="False" size=""/>
+            <declare name="AgeMonth, AgeDate, AgeYear" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Loop" type="Boolean" array="False" size=""/>
+            <assign variable="Loop" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <while expression="Loop == True">
+                <output expression="&quot;Input the Current Year&quot;" newline="True"/>
+                <input variable="CurrentYear"/>
+                <output expression="&quot;Input you Birth Year&quot;" newline="True"/>
+                <input variable="BirthYear"/>
+                <assign variable="AgeYear" expression="CurrentYear - BirthYear"/>
+                <output expression="&quot;Input the Current Month. Example : January = 01&quot;" newline="True"/>
+                <input variable="CurrentMonth"/>
+                <output expression="&quot;Input the Birth Month. Example : January = 01&quot;" newline="True"/>
+                <input variable="BirthMonth"/>
+                <assign variable="AgeMonth" expression="BirthMonth - CurrentMonth"/>
+                <if expression="CurrentMonth &gt;= BirthMonth">
+                    <then>
+                        <output expression="&quot;Input the Current Date&quot;" newline="True"/>
+                        <input variable="CurrentDate"/>
+                        <output expression="&quot;Input the Birth Date&quot;" newline="True"/>
+                        <input variable="BirthDate"/>
+                        <if expression="CurrentDate &lt;= BirthDate">
+                            <then>
+                                <assign variable="AgeDate" expression="BirthDate - CurrentDate"/>
+                                <assign variable="AgeMonth" expression="BirthMonth - CurrentMonth"/>
+                                <output expression="&quot;You are &quot; &amp; AgeYear" newline="False"/>
+                                <output expression="&quot; years, &quot; &amp; AgeMonth" newline="False"/>
+                                <output expression="&quot; months and &quot; &amp; AgeDate" newline="False"/>
+                                <output expression="&quot; days old.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <assign variable="AgeDate" expression="CurrentDate - Birthdate"/>
+                                <assign variable="AgeMonth" expression="CurrentMonth - BirthMonth"/>
+                                <assign variable="AgeYear" expression="AgeYear - 1"/>
+                                <output expression="&quot;You are &quot; &amp; AgeYear" newline="False"/>
+                                <output expression="&quot; years, &quot; &amp; AgeMonth" newline="False"/>
+                                <output expression="&quot; months and &quot; &amp; AgeDate" newline="False"/>
+                                <output expression="&quot; days old.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Input the Current Date&quot;" newline="True"/>
+                        <input variable="CurrentDate"/>
+                        <output expression="&quot;Input the Birth Date&quot;" newline="True"/>
+                        <input variable="BirthDate"/>
+                        <if expression="CurrentDate &gt;= BirthDate">
+                            <then>
+                                <assign variable="AgeDate" expression="CurrentDate - Birthdate"/>
+                                <assign variable="AgeMonth" expression="CurrentMonth - BirthMonth"/>
+                                <assign variable="AgeYear" expression="AgeYear - 1"/>
+                                <output expression="&quot;You are &quot; &amp; AgeYear" newline="False"/>
+                                <output expression="&quot; years, &quot; &amp; AgeMonth" newline="True"/>
+                                <output expression="&quot; months and &quot; &amp; AgeDate" newline="False"/>
+                                <output expression="&quot; days old.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;INVALID DATA PLEASE TRY AGAIN.&quot;" newline="True"/>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Do you want to try again?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again = &quot;Yes&quot;">
+                    <then>
+                        <output expression="&quot;Great!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Thank you!&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

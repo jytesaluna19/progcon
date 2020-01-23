@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-07 10:51:31 AM"/>
+        <attribute name="created" value="dXNlcjtBQ0VSOzIwMTktMTEtMTA7MDU6NDQ6MTAgUE07MjAwMw=="/>
+        <attribute name="edited" value="dXNlcjtBQ0VSOzIwMTktMTEtMTA7MDc6MDI6MTEgUE07MjsyMTA5"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTA7MjAyMC0wMS0wNzsxMDo1MTozMSBBTTsxOzIyODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome sa programa ni MaTeMe na tumutukoy kung ang inyong numero ay ODD o EVEN&quot;" newline="True"/>
+            <output expression="&quot;Pakilagay ang numerong gustong kunin&quot;" newline="True"/>
+            <declare name="Num" type="Integer" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="true"/>
+            <while expression="ExitCode == true">
+                <input variable="Num"/>
+                <if expression="Num%2==0">
+                    <then>
+                        <output expression="&quot;The number is EVEN&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;The number is ODD&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Gusto mo pa bang maghanap ng numero??&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again == &quot;oo&quot;">
+                    <then>
+                        <output expression="&quot;Pakilagay ng numerong gustong hanapin&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

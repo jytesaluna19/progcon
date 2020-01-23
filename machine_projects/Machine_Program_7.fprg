@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Name"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 11:20:06 AM"/>
+        <attribute name="created" value="TmFtZTtMQVBUT1AtUjI2SDhQRk47MjAyMC0wMS0wNjswMTo1ODoyNyBQTTsyNzE0"/>
+        <attribute name="edited" value="TmFtZTtMQVBUT1AtUjI2SDhQRk47MjAyMC0wMS0wNjswMjoyNDo1NCBQTTsxOzI4MTY="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTA7MjAyMC0wMS0xNzsxMToyMDowNiBBTTsyOzIyODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Value" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="True"/>
+            <assign variable="Total" expression="0"/>
+            <while expression="ExitCode == True">
+                <output expression="&quot;please insert a number.&quot;" newline="True"/>
+                <input variable="Value"/>
+                <if expression="Value = -999">
+                    <then>
+                        <output expression="Total" newline="True"/>
+                        <output expression="&quot;Do you want to try again?&quot;" newline="True"/>
+                        <declare name="D" type="String" array="False" size=""/>
+                        <input variable="D"/>
+                        <if expression="D = &quot;Yes&quot;">
+                            <then/>
+                            <else>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="Total" expression="Total + Value"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
